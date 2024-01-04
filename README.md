@@ -9,12 +9,6 @@ backgroundColor: black
 
 _A laughably-minimalist, integer-only, read-only Relational Database Management System that makes the author question why they ever bothered to write it up!_  
   
-
-## _Data Systems, Monsoon 2020_
-
-19th August, 2020
-Wednesday
-
 ---
 
 ### Important Features
