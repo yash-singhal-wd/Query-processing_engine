@@ -1,0 +1,10 @@
+LOAD Student
+LOAD Marks
+Q1_D_temp6 <- CROSS Student Marks
+Q1_D_temp5 <- SELECT Student_Stud_Id == Marks_Stud_Id FROM Q1_D_temp6
+Q1_D_temp4 <- SELECT Maths_marks >= 70 FROM Q1_D_temp5
+Q1_D_temp3 <- SELECT Physics_marks > 60 FROM Q1_D_temp4
+Q1_D_temp2 <- SELECT Stud_age >= 16 FROM Q1_D_temp3
+Q1_D_temp1 <- SELECT Stud_age <= 18 FROM Q1_D_temp2
+Q1_D <- PROJECT Student_Stud_Id,Maths_marks,Physics_marks,Stud_age FROM Q1_D_temp1
+PRINT Q1_D
